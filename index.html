@@ -3,45 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
+    <title>Charity Water - End the Global Water Crisis</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
-
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+    <!-- Header Section with Logo -->
+    <header class="header">
+        <div class="header-content">
+            <!-- Logo - You can replace this with an actual image -->
+            <div class="logo">charity: water</div>
         </div>
-    </section>
+    </header>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+    <!-- Main Content Section with Two Columns -->
+    <main class="main-content">
+        <!-- Left Column: Text and Donation Options -->
+        <div class="left-column">
+            <!-- Main Headline -->
+            <h1 class="main-headline">Join us to end the global water crisis</h1>
+            
+            <!-- Subheadline -->
+            <p class="subheadline">We bring clean and safe drinking water to communities all around the world and every dollar makes an impact</p>
+            
+            <!-- Main Donate Button -->
+            <a href="https://www.charitywater.org/" class="donate-btn">Donate</a>
+            
+            <!-- Quick Amount Buttons Container -->
+            <div class="quick-amounts">
+                <a href="https://www.charitywater.org/" class="amount-btn">$5</a>
+                <a href="https://www.charitywater.org/" class="amount-btn">$10</a>
+                <a href="https://www.charitywater.org/" class="amount-btn">$20</a>
+                <a href="https://www.charitywater.org/" class="amount-btn">$30</a>
+            </div>
+            
+            <!-- Custom Amount Input -->
+            <div class="custom-amount-container">
+                <label for="custom-amount" class="custom-label">Other amount:</label>
+                <div class="custom-input-wrapper">
+                    <input type="number" id="custom-amount" class="custom-input" placeholder="Enter amount" min="1">
+                    <a href="https://www.charitywater.org/" class="custom-donate-btn">Donate Custom</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Image -->
+        <div class="right-column">
+            <!-- Girl with Water Image -->
+            <img src="https://images.unsplash.com/photo-1559821481-18c80dd6f75f?auto=format&fit=crop&w=600&q=80" alt="Girl running water from a spigot" class="hero-image">
+        </div>
+    </main>
 </body>
 </html>
