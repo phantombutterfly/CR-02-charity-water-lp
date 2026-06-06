@@ -33,7 +33,7 @@ Fonts:
 body {
   font-family: 'Proxima Nova', 'Avenir', Arial, sans-serif;
   color: #222;
-  background-color: #f4f8fb;
+  background-color: #77A8BB;
 }
 
 /* Header Styles */
@@ -55,21 +55,21 @@ body {
   height: 40px;  /* Adjust height as needed */
   width: auto;   /* Maintains aspect ratio */
 }
-}
+
 
 /* Main Content Container */
 .main-content {
   display: flex;
-  max-width: 1400px;
-  margin: 0 auto;
+  gap: 0;
+  width: 100%;
   min-height: calc(100vh - 80px);
 }
 
 /* Left Column Styles */
 .left-column {
-  flex: 1;
+  flex: 1.5;
   background-color: #77A8BB;
-  padding: 60px 50px;
+  padding: 40px 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -78,10 +78,9 @@ body {
 /* Main Headline */
 .main-headline {
   font-size: 49px;
-  font-weight: bold;
   color: #fff;
   text-align: left;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   line-height: 1.2;
 }
 
@@ -90,7 +89,7 @@ body {
   font-size: 25px;
   color: #fff;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   line-height: 1.4;
 }
 
@@ -105,7 +104,7 @@ body {
   text-align: center;
   text-decoration: none;
   border-radius: 8px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
   border: none;
@@ -120,8 +119,8 @@ body {
 /* Quick Amount Buttons Container */
 .quick-amounts {
   display: flex;
-  gap: 15px;
-  margin-bottom: 30px;
+  gap: 10px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
@@ -131,8 +130,8 @@ body {
   color: #CBCCD1;
   font-size: 19px;
   font-weight: bold;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -152,7 +151,7 @@ body {
 /* Custom Amount Container */
 .custom-amount-container {
   background-color: #003366;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -171,13 +170,13 @@ body {
 .custom-input-wrapper {
   display: flex;
   gap: 10px;
-  flex: 1;
+  flex: 0.5;
 }
 
 /* Number Input Field */
 .custom-input {
-  flex: 1;
-  padding: 12px 15px;
+  flex: 0.25;
+  padding: 15px 12px;
   font-size: 16px;
   border: 2px solid #CBCCD1;
   border-radius: 6px;
@@ -198,6 +197,9 @@ body {
   padding: 12px 25px;
   font-size: 16px;
   font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   text-decoration: none;
   border-radius: 6px;
   cursor: pointer;
@@ -215,19 +217,16 @@ body {
 .right-column {
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  background-color: #f4f8fb;
+  background-color: #77A8BB;
 }
 
 /* Hero Image */
 .hero-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
+
 
 /* Responsive Design for Tablets and Mobile Devices */
 @media (max-width: 1024px) {
